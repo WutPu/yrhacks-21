@@ -39,7 +39,7 @@ for i in range(len(similarity)):
 
     seconds = frame / video_fps
     timestamp = datetime.timedelta(seconds = seconds)
-    show_image = fig.add_subplot(1, len(similarity), i + 1)
+    show_image = fig.add_subplot(2, len(similarity), i + 1)
     show_image.set_title(timestamp)
     plt.axis("off")
     plt.imshow(image)
