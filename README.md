@@ -2,7 +2,7 @@
 
 **Requirements:**
   - Matplotlib v.3.4.1
-  - OpenCV v.4.5.1.48
+  - OpenCV-Python v.4.5.1.48
 
 
 **How to Use:**
