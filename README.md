@@ -6,7 +6,7 @@
 
 
 **How to Use:**
-  '''python main.py [video_file_path] [img_file_path]'''
+  - python main.py [video_file_path] [img_file_path]
 
 
 **What it Does:**
