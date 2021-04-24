@@ -1,6 +1,4 @@
-venv/
-.idea/
-tests/
+*/
 tests.zip
 videoSpliter.py
 test.txt
