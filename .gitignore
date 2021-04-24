@@ -14,3 +14,5 @@ a.py
 aaaaaaaaaaaa.txt
 test.py
 videoSpliter.py
+*.jpeg
+*.mkv
