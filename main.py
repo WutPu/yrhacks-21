@@ -4,11 +4,17 @@ from matplotlib import pyplot as plt
 import datetime
 import argparse
 
+parser_smarser = argparse.ArgumentParser()
+parser_smarser.add_argument("video_file")
+parser_smarser.add_argument("img_file")
+
+parsed_args = parser_smarser.parse_args()
+
 similarity = []
 frame_count = 0
 
-img = cv2.imread("tests/test_celeste.png", 0)
-cap = cv2.VideoCapture("tests/test_celeste.mp4")
+img = cv2.imread(parsed_args.img_file, 0)
+cap = cv2.VideoCapture(parsed_args.video_file)
 video_width, video_height = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 video_fps = int(cap.get(cv2.CAP_PROP_FPS))
 img = cv2.resize(img, (video_width, video_height))
